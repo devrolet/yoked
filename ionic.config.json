@@ -1,0 +1,8 @@
+{
+  "name": "yoked",
+  "app_id": "7abf6c50",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
