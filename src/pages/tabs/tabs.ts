@@ -4,7 +4,6 @@ import { AddWorkoutPage } from '../add-workout/add-workout';
 import { WorkoutsPage } from '../workouts/workouts';
 import { AboutPage } from '../about/about';
 
-
 @Component({
   templateUrl: 'tabs.html'
 })
