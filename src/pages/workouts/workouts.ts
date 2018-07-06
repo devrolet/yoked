@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import {WorkoutService} from '../../app/services/workout.service';
+import { WorkoutService } from '../../app/services/workout.service';
 import { WorkoutDetailsPage } from '../workout-details/workout-details';
 
 @Component({
   selector: 'workouts',
-  templateUrl: 'workouts.html'
+  templateUrl: 'workouts.html',
+  providers: [WorkoutService]
 })
 export class WorkoutsPage {
   workouts:any;
@@ -16,7 +17,6 @@ export class WorkoutsPage {
 
   ngOnInit() {
     this.workoutService.getWorkouts().subscribe(workouts => {
-      console.log(workouts);
       this.workouts = workouts;
     });
   }
