@@ -16,6 +16,10 @@ export class AddWorkoutPage {
   public result: any;
 
   constructor(public navCtrl: NavController, private workoutService:WorkoutService) {
+
+  }
+
+  onSubmit() {
     var workout = {
       title: this.title,
       note: this.note,

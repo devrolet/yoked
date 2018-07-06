@@ -21,7 +21,7 @@ export class WorkoutService {
 
     addWorkout(workout) {
         var headers = new Headers();
-        headers.append('Content Type', 'application/json');
+        headers.append('Content-Type', 'application/json');
         return this.http.post(this.workoutsUrl+'?apiKey='+this.apiKey, JSON.stringify(workout), {headers:headers})
             .map(res => res.json());
     }
